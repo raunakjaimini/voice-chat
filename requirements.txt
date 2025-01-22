@@ -1,0 +1,7 @@
+streamlit
+python-dotenv
+google-generativeai
+streamlit-chat
+audio_recorder_streamlit
+pydub
+speechrecognition
