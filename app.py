@@ -106,7 +106,12 @@ if audio_bytes is not None:
         st.error("Audio transcription failed. Please try again.")
 
 # Display the chat history with "Bot" and "User" labels
-for role, text in reversed(st.session_state['chat_history']):
+# for role, text in reversed(st.session_state['chat_history']):
+#     if role == "User":
+#         st.markdown(f"**User:** {text}")
+#     else:
+#         st.markdown(f"**Bot:** {text}")
+for role, text in st.session_state['chat_history']:
     if role == "User":
         st.markdown(f"**User:** {text}")
     else:
